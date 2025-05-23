@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_book_details"
+        android:name="com.qubitech.oboshor.ui.book.BookDetailsFragment"
+        android:label="@string/title_book_details"
+        tools:layout="@layout/fragment_book_details" >
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            />
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_request_book"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_logout"
+            app:destination="@id/navigation_logout" />
+        <action
+            android:id="@+id/action_navigation_book_details_to_navigation_book_category"
+            app:destination="@id/navigation_book_category"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popUpTo="@id/navigation_book_details"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.qubitech.oboshor.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_book_details"
+            app:destination="@id/navigation_book_details"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_book_details"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_book_category"
+            app:destination="@id/navigation_book_category"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_book_category"
+
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_request_book"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_profile"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_all_categories"
+            app:destination="@id/navigation_all_categories"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_all_categories"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_all_publishers"
+            app:destination="@id/navigation_all_publishers"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_all_publishers"
+
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_order"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_logout"
+            app:destination="@id/navigation_logout"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_book_category"
+        android:name="com.qubitech.oboshor.ui.book.BookCategoryFragment"
+        android:label="fragment_book_category"
+        tools:layout="@layout/fragment_book_category" >
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_book_details"
+            app:destination="@id/navigation_book_details"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popUpTo="@id/navigation_book_details"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:popUpTo="@id/navigation_request_book"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+        <action
+            android:id="@+id/action_navigation_book_category_to_navigation_logout"
+            app:destination="@id/navigation_logout" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/navigation_request_book"
+        android:name="com.qubitech.oboshor.ui.requestbook.RequestBookFragment"
+        android:label="RequestBookFragment" >
+
+        <action
+            android:id="@+id/action_navigation_request_book_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_dashboard"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_request_book_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_order"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_request_book_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_request_book_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_profile"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_request_book_to_navigation_logout"
+            app:destination="@id/navigation_logout"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.qubitech.oboshor.ui.profile.ProfileFragment"
+        android:label="SettingsFragment" >
+
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_dashboard"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_logout"
+            app:destination="@id/navigation_logout"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_request_book"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_order"
+
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_all_categories"
+        android:name="com.qubitech.oboshor.ui.book.AllCategoriesFragment"
+        android:label="fragment_all_categories"
+        tools:layout="@layout/fragment_all_categories" >
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_book_category"
+            app:destination="@id/navigation_book_category"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popUpTo="@id/navigation_book_category"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_navigation_all_categories_self"
+            app:destination="@id/navigation_all_categories"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpTo="@id/navigation_dashboard"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_logout"
+            app:destination="@id/navigation_logout" />
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:popUpTo="@id/navigation_request_book"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_categories_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_all_publishers"
+        android:name="com.qubitech.oboshor.ui.book.AllPublishersFragment"
+        android:label="fragment_all_publishers"
+        tools:layout="@layout/fragment_all_publishers" >
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_book_category"
+            app:destination="@id/navigation_book_category"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_book_category"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:popUpTo="@id/navigation_request_book"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_logout"
+            app:destination="@id/navigation_logout" />
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_all_publishers_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.qubitech.oboshor.ui.login.LogoutFragment"
+        />
+
+
+    <fragment
+        android:id="@+id/navigation_networks_and_contacts"
+        android:name="com.qubitech.oboshor.ui.networking.NetworkingContactFragment"
+        >
+        <action
+            android:id="@+id/action_navigation_networks_and_contacts_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_dashboard"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_networks_and_contacts_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_profile"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_networks_and_contacts_to_navigation_logout"
+            app:destination="@id/navigation_logout"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_networks_and_contacts_to_navigation_order"
+            app:destination="@id/navigation_order"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_order"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_networks_and_contacts_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_request_book"
+
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.qubitech.oboshor.ui.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_dashboard"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_request_book"
+            app:destination="@id/navigation_request_book"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_request_book"
+
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_networks_and_contacts"
+            app:destination="@id/navigation_networks_and_contacts"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_networks_and_contacts"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/navigation_profile"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_order_to_navigation_logout"
+            app:destination="@id/navigation_logout"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

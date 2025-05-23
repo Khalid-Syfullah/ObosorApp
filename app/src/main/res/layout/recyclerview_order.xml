@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recyclerview_order_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recyclerview_order_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/open_sans"
+            android:text="ID:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/recyclerview_order_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="@id/recyclerview_order_id_label"
+            app:layout_constraintTop_toBottomOf="@id/recyclerview_order_id_label"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:maxLines="1"
+            android:text="#8399283782"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_order_id_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_id_label"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_order_id_label"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Date:"
+            android:textColor="@color/oboshor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_status_label"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Date"
+            android:textColor="@color/oboshor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_date_label"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_status_label"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Status:"
+            android:textColor="@color/oboshor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_id"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:fontFamily="@font/open_sans"
+            android:gravity="start"
+            android:text="Placed"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_order_status_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_status_label"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_order_status_label"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_books_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Ordered Books:"
+            android:textColor="@color/oboshor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_date"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_books"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="1"
+            android:textColor="@color/oboshor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_order_books_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_books_label"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_order_books_label"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Delivery address:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_books_label"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="221B, Baker Street"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_order_address_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_address_label"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_order_address_label"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Phone:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_address_label"
+            tools:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recyclerview_order_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="+8801XXXXXXXXX"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_order_phone_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerview_order_phone_label"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_order_phone_label"
+            tools:textStyle="normal" />
+
+        <Button
+            android:id="@+id/recyclerview_order_track_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableEnd="@drawable/network"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingVertical="8dp"
+            android:text="Track Order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_order_phone_label" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

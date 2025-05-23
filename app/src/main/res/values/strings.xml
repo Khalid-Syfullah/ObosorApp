@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Obosor</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_book_details">Book Details</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="loading">Loading</string>
+    <string name="track_my_order">Track My Order</string>
+    <string name="request_a_book">Request a Book</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="search_your_book">Search your book...</string>
+    <string name="category">Category</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View all</string>
+    <string name="best_seller">Obosor Best Seller</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="on_sale">On Sale</string>
+    <string name="pre_order_list">Pre-Order List</string>
+    <string name="book">Book</string>
+    <string name="random_amount">850</string>
+    <string name="tk">tk</string>
+    <string name="author">Author</string>
+    <string name="app_bar_title">অবসর</string>
+    <string name="random_book_name">The Sherlock Effect</string>
+    <string name="random_author_name">R. K. Lyon</string>
+    <string name="random_amount_2">TK. 850</string>
+    <string name="random_amount_3"> <strike> TK. 900 </strike> </string>
+    <string name="offer_amount">10% off</string>
+    <string name="quantity">Quantity:</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="one">1</string>
+    <string name="description">Description:</string>
+    <string name="random_text">এই খানে প্রোডাক্টের বর্ননা থাকবে,  In here Product description is added. Lorem  Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has  been the industry\'s standard dummy text ever  since the 1500s, when an  unknown printer  took a galley of type and made in japan.</string>
+    <string name="add_to_wishlist">Add to Wishlist</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="random_category">Novel</string>
+    <string name="publisher">Publisher</string>
+    <string name="random_publisher">Prothoma</string>
+    <string name="publishing_year">Publishing Year</string>
+    <string name="available_quantity">Available Quantity</string>
+    <string name="genre">Genre</string>
+    <string name="total_pages">Total Pages</string>
+    <string name="edition">Edition</string>
+    <string name="price">Price</string>
+    <string name="random_year">2021</string>
+    <string name="history">History</string>
+    <string name="random_number">450</string>
+    <string name="second">2nd</string>
+    <string name="specifications">Specifications</string>
+    <string name="reviews">Reviews</string>
+    <string name="totally_amazing">Totally amazing!</string>
+    <string name="random_text_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida vitae.</string>
+    <string name="two_hours_ago">2 hours ago</string>
+    <string name="random_name">Mahir Ashef</string>
+    <string name="notifications">Notifications</string>
+    <string name="networksandcontacts"><![CDATA[Networks & Contacts]]></string>
+    <string name="profile">Profile</string>
+    <string name="publishers">Publishers</string>
+    <string name="all_publishers">All Publishers</string>
+    <string name="all_categories">All Categories</string>
+    <string name="collections">Collections</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="review">Review</string>
+    <string name="your_feelings">Your Feelings!</string>
+    <string name="your_review">Your Review</string>
+    <string name="stars_you_will_provide">Stars You Will Provide?</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="add_your_review">Add Your Review!</string>
+    <string name="go">Go</string>
+    <string name="title">Title</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="trending">Trending</string>
+    <string name="extra_discount">Extra Discount</string>
+
+
+    <string-array name="cities">
+
+        <item>Dhaka</item>
+        <item>Narsingdi</item>
+        <item>Gazipur</item>
+        <item>Shariatpur</item>
+        <item>Narayanganj</item>
+        <item>Tangail</item>
+        <item>Kishoreganj</item>
+        <item>Manikganj</item>
+        <item>Munshiganj</item>
+        <item>Rajbari</item>
+        <item>Madaripur</item>
+        <item>Gopalganj</item>
+        <item>Faridpur</item>
+
+        <item>Rajshahi</item>
+        <item>Sirajganj</item>
+        <item>Pabna</item>
+        <item>Bogra</item>
+        <item>Natore</item>
+        <item>Joypurhat</item>
+        <item>Chapainawabganj</item>
+        <item>Naogaon</item>
+
+
+        <item>Rangpur</item>
+        <item>Panchagarh</item>
+        <item>Dinajpur</item>
+        <item>Lalmonirhat</item>
+        <item>Nilphamari</item>
+        <item>Gaibandha</item>
+        <item>Thakurgaon</item>
+        <item>Kurigram</item>
+
+
+        <item>Khulna</item>
+        <item>Jessore</item>
+        <item>Satkhira</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Chuadanga</item>
+        <item>Kushtia</item>
+        <item>Magura</item>
+        <item>Bagerhat</item>
+        <item>Jhenaidah</item>
+
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Feni</item>
+        <item>Brahmanbaria</item>
+        <item>Rangamati</item>
+        <item>Noakhali</item>
+        <item>Chandpur</item>
+        <item>Lakshmipur</item>
+        <item>Coxbazar</item>
+        <item>Khagrachhari</item>
+        <item>Bandarban</item>
+
+        <item>Mymensingh</item>
+        <item>Sherpur</item>
+        <item>Jamalpur</item>
+        <item>Netrokona</item>
+
+        <item>Barisal</item>
+        <item>Jhalakathi</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Bhola</item>
+        <item>Barguna</item>
+
+        <item>Sylhet</item>
+        <item>Moulvibazar</item>
+        <item>Habiganj</item>
+        <item>Sunamganj</item>
+
+
+    </string-array>
+</resources>

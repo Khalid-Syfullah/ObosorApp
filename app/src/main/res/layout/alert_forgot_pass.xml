@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/forgot_pass_alert_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Forgot Password"
+            android:textColor="@color/oboshor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_forgot_pass_alert_label_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Phone No."
+            android:textColor="@color/oboshor"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_pass_alert_header" />
+
+        <EditText
+            android:id="@+id/et_forgot_pass_alert_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_box"
+            android:hint="01XXXXXXXXX"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLength="11"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_forgot_pass_alert_label_phone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_pass_alert_label_phone" />
+
+        <TextView
+            android:id="@+id/tv_otp_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="We will send you an OTP in your Phone Number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_forgot_pass_alert_phone"
+            app:layout_constraintStart_toStartOf="@+id/et_forgot_pass_alert_phone"
+            app:layout_constraintTop_toBottomOf="@+id/et_forgot_pass_alert_phone" />
+
+        <Button
+            android:id="@+id/btn_forgot_pass_alert_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="32dp"
+
+            android:layout_marginBottom="32dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_otp_msg"
+            app:layout_constraintStart_toEndOf="@+id/btn_forgot_pass_alert_cancel"
+            app:layout_constraintTop_toBottomOf="@+id/tv_otp_msg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_forgot_pass_alert_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+
+            android:backgroundTint="@color/white"
+
+            android:text="Cancel"
+            android:textColor="@color/oboshor"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_forgot_pass_alert_submit"
+            app:layout_constraintEnd_toStartOf="@+id/btn_forgot_pass_alert_submit"
+            app:layout_constraintStart_toStartOf="@+id/tv_otp_msg"
+            app:layout_constraintTop_toTopOf="@+id/btn_forgot_pass_alert_submit"
+            app:strokeColor="@color/oboshor"
+            app:strokeWidth="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

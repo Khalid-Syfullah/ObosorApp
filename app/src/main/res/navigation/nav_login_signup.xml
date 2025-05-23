@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login_signup"
+    app:startDestination="@id/navigation_login">
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.qubitech.oboshor.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_sign_up"
+            app:destination="@id/navigation_sign_up" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_sign_up"
+        android:name="com.qubitech.oboshor.ui.login.SignupFragment"
+        android:label="SignUp"
+        tools:layout="@layout/fragment_signup" >
+
+        <action
+            android:id="@+id/action_navigation_sign_up_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+</navigation>

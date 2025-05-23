@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+    <item
+        android:id="@id/navigation_dashboard"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:menuCategory="secondary"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/track_order"
+        android:menuCategory="secondary"
+        android:title="@string/track_my_order" />
+    <item
+        android:id="@+id/navigation_request_book"
+        android:icon="@drawable/request_book"
+        android:menuCategory="secondary"
+        android:title="@string/request_a_book" />
+    <item
+        android:id="@+id/navigation_networks_and_contacts"
+        android:icon="@drawable/network"
+        android:menuCategory="secondary"
+        android:title="@string/networksandcontacts" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:menuCategory="secondary"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/logout"
+        android:menuCategory="secondary"
+        android:title="@string/logout" />
+
+</menu>

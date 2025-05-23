@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "797371677094",
+    "project_id": "obosor-15adc",
+    "storage_bucket": "obosor-15adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797371677094:android:bc774337485bb10566b767",
+        "android_client_info": {
+          "package_name": "com.qubitech.oboshor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797371677094-1s2bpcng2eie20ca9qkhqmr6tdtpkj7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "17a4b15762e11d0f67e49e6234b580d9c115206f"
+          }
+        },
+        {
+          "client_id": "797371677094-5nf81fo5bp3smgvgvj10v4mfm8urm0er.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "25100326919cf6dd3bbcd950c9a1a8c4735942b6"
+          }
+        },
+        {
+          "client_id": "797371677094-9v5ts2dvg6clmu3gl0vg32v90uthl0bl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "358dba4f897aaeba76ddf8597bceea4f0bd16c81"
+          }
+        },
+        {
+          "client_id": "797371677094-gcsosk3rvr7l0unjl5e8u3acrf7m72d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "30ac22cad120f8c2485aa423bb62a2221a6db13a"
+          }
+        },
+        {
+          "client_id": "797371677094-mj5h40oglj6hf5p41otmrjhjthbcnrr8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "590fb7ea2a9b8e8b98f83f2f97144a89bbb2e7f8"
+          }
+        },
+        {
+          "client_id": "797371677094-su80vht9cdbvnp8qq0oga057ojvfht56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "3dd661bbdd82fde9982494b825b429d3d818d87f"
+          }
+        },
+        {
+          "client_id": "797371677094-ubsho7lkehump63ip06dn1legrnrfrje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qubitech.oboshor",
+            "certificate_hash": "49771fdc1e3988e3a489083fcfe579442b416728"
+          }
+        },
+        {
+          "client_id": "797371677094-i3phvb2t10nki4sf0bj7prk5glcqvkt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Js9JI_9hfLmn4SnhD71P25P16u84LlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797371677094-i3phvb2t10nki4sf0bj7prk5glcqvkt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
